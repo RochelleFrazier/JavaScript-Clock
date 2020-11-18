@@ -1,0 +1,40 @@
+/* Layout */
+
+html, body .container {
+	height: 100%;
+}
+
+/* Position the container to align the clock*/
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* Position the clock face background*/
+.clock {
+	position: relative;
+	width: 400px;
+	height: 400px;
+	background: url("roman_clock_.jpg");
+}
+
+/* Position/color the center dot to center of clock face*/
+.clock:after {
+	position: absolute;
+	content: '';
+	background: black;
+	width: 15px;
+	height: 15px;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	border-radius: 50%;
+}
+
+/* Position the clock hands on the background image*/
+.hands {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
